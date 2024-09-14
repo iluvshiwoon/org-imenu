@@ -324,6 +324,7 @@ This can be used to display the current filter in the modeline.")
 
 (provide 'org-imenu)
 ;;; org-imenu.el ends here
+)
 
 
 
