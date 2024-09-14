@@ -161,11 +161,9 @@ This can be used to display the current filter in the modeline.")
            (cond ((> level org-imenu-depth)
                   nil)
                  ((> (length children) 0)
-                  (push (append (list node) children) imenu)
-                  ;; (add-to-list 'imenu (append (list node) children) t))
+                  (push (append (list node) children) imenu))
                  ((and match (> level 1))
-                  (push (cons node marker) imenu)
-                  ;; (add-to-list 'imenu (cons node marker) t)))))))
+                  (push (cons node marker) imenu)))))))
     imenu))
 
 (defun org-imenu-prev-item ()
@@ -324,7 +322,6 @@ This can be used to display the current filter in the modeline.")
 
 (provide 'org-imenu)
 ;;; org-imenu.el ends here
-)
 
 
 
